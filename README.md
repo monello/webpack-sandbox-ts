@@ -2,9 +2,9 @@
 
 Just roughly following the "Getting Started" section here: <a href="https://webpack.js.org/guides/getting-started/" target="_new">https://webpack.js.org/guides/getting-started/</a>
 
-## Prep
+## Prep (optional)
 
-1. (optional) Updated my `.git/gitconfig` and added my usual command aliases to work quicker with git.
+1. Updated my `.git/gitconfig` and added my usual command aliases to work quicker with git.
 
 ```
 git config --global alias.st status
@@ -25,11 +25,11 @@ This doesn't get pushed to the repo, but my aliases are:
 
 ## Pre-flight checks
 
-1. Check if you have `npm` installed, by running the line below, you should get a version number printed to the terminal: "8.1.2"
+1. Check if you have `npm` installed, by running the line below, you should get a version number printed to the terminal, eg: "8.1.2"
 
 `npm -v`
 
-2. If you don't have `npm` installed yest then download it here and follow the steps there to install it: <a href="https://nodejs.org/en/download/" target="_new">https://nodejs.org/en/download/</a>
+2. If you don't have `npm` installed yet, then download it here and follow the steps there to install it: <a href="https://nodejs.org/en/download/" target="_new">https://nodejs.org/en/download/</a>
 
 ## Setup - From this repo
 
@@ -45,7 +45,7 @@ This doesn't get pushed to the repo, but my aliases are:
    eg. `git clone git@github.com:monello/new-repo-name-goes-here.git`
 
 3. Initialize `npm` - to create the `package.json` file.
-   The `-y` flag means "**_Yes, set up the `package.json` with default values and don't ask all the set-up questions_**"
+   The `-y` flag means "_Yes, set up the `package.json` with default values and don't ask all the set-up questions_"
 
 `npm init -y`
 
@@ -58,7 +58,10 @@ This doesn't get pushed to the repo, but my aliases are:
 `npm install --save-dev typescript ts-loader`
 
 6. Add a `.gitignore` file in the root directory and add the the following in it so long:
-    - `node_modules`
-    - `package-lock.json`
+
+```
+node_modules
+package-lock.json
+```
 
 Now would be a good time to do an initial commit for the project.
