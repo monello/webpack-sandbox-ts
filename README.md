@@ -64,4 +64,34 @@ node_modules
 package-lock.json
 ```
 
+7. Initialize the TypeScript compiler. This will create a `tsconfig.json` file
+
+`tsc --init`
+
+8. Open the `tsconfig.json` file.
+   A few settings will already be set, but check that the follow is also set:
+
+    - `"rootDir": "./src"`
+    - `"sourceMap": true`
+    - `"outDir": "./dist"`
+    - `"noEmitOnError": true`
+    - `"strict": true`
+
+9. Install a dev server (which will later be replaced by a webpack verion) called `lite-server`
+
+`npm install --save-dev lite-server`
+
+10. Update the `package.json` file to set `lite-server` to be used when you run `npm start`
+
+```
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+```
+
+11. Add an `index.html` file in the root dir, and add something in it so view in the browser
+12. Run `npm start` to test `lite-server` and it should automatically open this app in the browser and display whatever you added in the `index.html`.
+    -   Change and save what you display in the HTML file and you should see the browser auto-reload and see you update
+
 Now would be a good time to do an initial commit for the project.
